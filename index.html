@@ -7,20 +7,40 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <input type="text" id="search-input" required>
-  <button id="search-button">Search</button>
-  <div id="pokemon-name"></div>
-  <div id="pokemon-id"></div>
-  <div id="weight"></div>
-  <div id="height"></div>
-  <div id="types"></div>
-  <div id="hp"></div>
-  <div id="attack"></div>
-  <div id="defense"></div>
-  <div id="special-attack"></div>
-  <div id="special-defense"></div>
-  <div id="speed"></div>
+    <main>
+      <header>
+        <h1>POKÉMON SEARCH APP</h1>
+      </header>
+      <section>
+        <form id="search-form">
+          <input type="text" id="search-input" required>
+          <button id="search-button">SEARCH</button>
+        </form>
+      </section>
+      <section>
+        <h2>POKEMON DETAILS</h2>
+        <div id="pokemon-name"></div>
+        <div id="pokemon-id"></div>
+        <div id="weight"></div>
+        <div id="height"></div>
+        <div id="types"></div>
+      </section>
+      <section>
+        <h2>POKEMON STATS</h2>
+        <div id="hp"></div>
+        <div id="attack"></div>
+        <div id="defense"></div>
+        <div id="special-attack"></div>
+        <div id="special-defense"></div>
+        <div id="speed"></div>
+      </section>
+      <aside id="random_pokemon">
+        <h2>RANDOM POKÉMON</h2>
+        <div id="random-pokemon-name"></div>
+        <div id="random-pokemon-image"></div>
+        <button id="randomise-button">SHOW ME ANOTHER RAND-ÉMON</button>
+      </aside>
+    </main>
   <script src="script.js"></script>
 </body>
 </html>
-
