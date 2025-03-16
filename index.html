@@ -3,44 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Search App</title>
+  <title>pokemon search app</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
       <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon logo"/>
         <h1>POKÉMON SEARCH APP</h1>
       </header>
       <section>
         <form id="search-form">
           <input type="text" id="search-input" required>
-          <button id="search-button">SEARCH</button>
+          <button id="search-button">search</button>
         </form>
       </section>
       <section>
-        <h2>POKEMON DETAILS</h2>
-        <div id="pokemon-name"></div>
-        <div id="pokemon-id"></div>
-        <div id="weight"></div>
-        <div id="height"></div>
-        <div id="types"></div>
+        <h2>POKÉMON DETAILS</h2>
+        <div id="pokemon-name">
+          <h4>name: </h4>
+        </div>
+        <div id="pokemon-id">
+          <h4>id: </h4>
+        </div>
+        <div id="weight">
+          <h4>weight: </h4>
+        </div>
+        <div id="height">
+          <h4>height: </h4>
+        </div>
+        <div id="types">
+          <h4>types: </h4>
+        </div>
+        <h4>❗👇 what it looks like 👇❗</h4>
+        <img id="pokemon-sprite">
       </section>
       <section>
         <h2>POKEMON STATS</h2>
-        <div id="hp"></div>
-        <div id="attack"></div>
-        <div id="defense"></div>
-        <div id="special-attack"></div>
-        <div id="special-defense"></div>
-        <div id="speed"></div>
+        <div id="hp">
+          <h4>hp: </h4>
+        </div>
+        <div id="attack">
+          <h4>attack: </h4>
+        </div>
+        <div id="defense">
+          <h4>defense: </h4>
+        </div>
+        <div id="special-attack">
+          <h4>special attack: </h4>
+        </div>
+        <div id="special-defense">
+          <h4>special defense: </h4>
+        </div>
+        <div id="speed">
+          <h4>speed: </h4>
+        </div>
       </section>
-      <aside id="random_pokemon">
-        <h2>RANDOM POKÉMON</h2>
-        <div id="random-pokemon-name"></div>
-        <div id="random-pokemon-image"></div>
-        <button id="randomise-button">SHOW ME ANOTHER RAND-ÉMON</button>
-      </aside>
     </main>
+  <section id="random">
+    <aside id="random_pokemon">
+      <h2>RANDOM POKÉMON</h2>
+      <div id="random-pokemon-name">
+        <h3>who's that pokémon!?</h3>
+      </div>
+      <div id="random-pokemon-image">
+        <h2>❗👇 what it looks like 👇❗</h2>
+        <input type="text" id="guess">
+        <button id="guess-btn">take a guess?</button>
+      </div>
+      <h3>no clue?</h3>
+      <button id="randomise-button">show me another rand-émon</button>
+    </aside>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
