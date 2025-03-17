@@ -64,18 +64,23 @@
       </section>
     </main>
   <section id="random">
-    <aside id="random_pokemon">
-      <h2>RANDOM POKÉMON</h2>
-      <div id="random-pokemon-name">
-        <h3>who's that pokémon!?</h3>
-      </div>
-      <div id="random-pokemon-image">
-        <h2>❗👇 what it looks like 👇❗</h2>
-        <input type="text" id="guess">
-        <button id="guess-btn">take a guess?</button>
-      </div>
-      <h3>no clue?</h3>
-      <button id="randomise-button">show me another rand-émon</button>
+    <aside id="random-pokemon-aside">
+      <form id="who-is-that-pokemon">
+        <h2>RANDOM POKÉMON</h2>
+        <div id="random-pokemon-name">
+          <h3>who's that pokémon!?</h3>
+        </div>
+        <div id="random-pokemon-image">
+          <h2>❗👇 what it looks like 👇❗</h2>
+          <img id="random-sprite">
+          <input type="text" id="guess">
+          <button id="guess-btn">take a guess?</button>
+        </div>
+        <h3>no clue?</h3>
+        <button id="randomise-button">show me another rand-émon</button>
+        <button id="hint">hint, please</button>
+        <p id="hint-text"></p>
+      </form>
     </aside>
   </section>
   <script src="script.js"></script>

@@ -8,21 +8,22 @@
 *, body, html {
   padding: 0;
   margin: 0;
-  font-size: 8px;
-  letter-spacing: 5px;
-  line-height: 2rem;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1rem;
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(
-    90deg,
-    rgba(236, 248, 130, 0.404),
-    rgba(229, 248, 58, 0.521)
-  ); */
-    font-family: "Press Start 2P", system-ui;
+  background: linear-gradient(
+    0deg,
+    #ffcc0149,
+    #ffcc01
+  );
+    font-family: "Courier New", "Press Start 2P", system-ui;
     text-shadow:rgba(0, 0, 0, 0.767) 1px 2px 5px;
 }
 
@@ -32,7 +33,7 @@ main {
   background-color: rgba(212, 145, 1, 0.336);
   border-radius: 20px;
   border: 2px solid rgb(255, 255, 255);
-  height: 90vh;
+  height: fit-content;
   margin-top: 1vh;
   display: flex;
   flex-direction: column;
@@ -47,13 +48,15 @@ main {
 }
 
 h1 {
-  padding: 0vh 0 2vh 0;
+  padding: 0.5vh 0 1.5vh 0;
   font-size: 1.5rem;
+  text-shadow: none;
+  color: #ffcc01;
   text-shadow: none;
 }
 
 img {
-  padding-top: 3vh;
+  padding-top: 1vh;
   padding-bottom: 1vh;
   justify-self: center;
 }
@@ -69,6 +72,7 @@ img {
 
 main section {
   padding-right: 0; 
+  padding-bottom: 1vh;
   width: 100%; 
   display: flex; 
   flex-direction: column; 
@@ -88,26 +92,153 @@ main section {
 
 
 
+
+
 h2 {
   color: white;
-  padding: 1vh 0;
+  padding: 0.2vh 0;
 }
 
 
 h4 {
   display: inline;
   color: white;
-  padding: 1vh 0;
+  padding: 0.2vh 0;
   font-weight: 200;
   font-size: 1rem;
   line-height: 2rem;
-  /* text-shadow: black 2px 2px 2px; */
+  
 }
 
 p {
-  font-size: 1rem;
-  line-height: 3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: black;
-  font-weight: 200;
+  font-weight: 900;
   text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+/* Special styling for Pokémon types */
+
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+#random-sprite {
+  display: block;
+}
+
+#guess {
+  display:block;
+  margin: 1vh 0 1vh 0;
+}
+
+input {
+  padding: 4px;
+}
+
+#search-button {
+  margin: 2vh!important;
+  width: 16vw;
+}
+
+#guess-btn, #randomise-button, #search-button, #hint {
+  display:block;
+  margin: 0.5vh 0;
+  padding: 0.5rem;
+  background-color: rgb(1, 212, 184);
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+  text-shadow:rgba(0, 0, 0, 0.767) 1px 2px 5px;
+  font-size: 1.2rem;
+}
+
+#guess-btn:hover, #randomise-button:hover, #search-button:hover, #hint:hover {
+  background-color: rgb(47, 0, 255);
+  transform: scale(1.05);
+  color: yellow;
+  text-shadow:none;
+}
+
+h3 {
+  padding: 1vh 0;
+}
+
+.random-success {
+  line-height: 2rem;
+  padding: 2vh 0;
+  font-size: 2rem;
+  color: black;
 }
