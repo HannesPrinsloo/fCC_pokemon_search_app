@@ -148,13 +148,13 @@ guessBtn.addEventListener(("click"), () => {
 randomiseButton.addEventListener("click", getRandomPokemon);
 hintBtn.addEventListener("click", () => {
     hintText.textContent = `${randomPokemonData.name}`;
-})
+});
 
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     getPokemon();
     resetUI();
-})
+});
     
 
